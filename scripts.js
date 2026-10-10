@@ -1,13 +1,9 @@
 // Lista de items a procesar
 const items = ["uno", "dos", "tres"];
 
-// Cuenta los items procesados, sin estado global ni ramas duplicadas
+// Cuenta cuantos items hay para procesar
 function processItems() {
-    let counter = 0;
-    for (const item of items) {
-        counter += 1;
-    }
-    return counter;
+    return items.length;
 }
 
 // Antes usaba eval(), que permite ejecutar codigo arbitrario.
